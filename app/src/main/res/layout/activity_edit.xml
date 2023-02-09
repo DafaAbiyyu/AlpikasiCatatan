@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Judul"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_note"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginTop="10dp"
+        android:hint="Tulisan"
+        android:minLines="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_title" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="353dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#4E4C4C"
+        android:text="SAVE"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_note"
+        app:layout_constraintStart_toStartOf="@+id/edit_note"
+        app:layout_constraintTop_toBottomOf="@+id/edit_note"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4E4C4C"
+        android:text="UPDATE"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_save" />
+</androidx.constraintlayout.widget.ConstraintLayout>
